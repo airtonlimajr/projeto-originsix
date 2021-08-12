@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;700&display=swap"
         rel="stylesheet" />
@@ -63,7 +64,7 @@
             </div>
         </section>
 
-        <div class="divider-1"></div>
+        <div class="divider-2"></div>
 
         <section class="section" id="services">
             <div class="container grid">
@@ -95,18 +96,90 @@
         <div class="divider-1"></div>
 
         <section class="section" id="testimonials">
-            <div class="container grid">
-                Depoimentos
+            <div class="container">
+              <header>
+                <h2 class="title">Depoimentos de quem já passou por aqui</h2>
+              </header>
+              <div class="testimonials swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="testimonial swiper-slide">
+                    <blockquote>
+                      <p>
+                        <span>&ldquo;</span>
+                        Eu sou cliente do Beautysalon há 5 anos e não troco por nada! Certamente meu cabelo mudou muito depois que comecei a tratar somente com produtos naturais e veganos. São profissionais incríveis e qualificados.   
+                      </p>
+                      <cite>
+                        <img
+                          src="https://randomuser.me/api/portraits/women/0.jpg"
+                          alt="Foto de Wanessa Souza"
+                        />
+                        Clarisse Moura
+                      </cite>
+                    </blockquote>
+                  </div>
+    
+                  <div class="testimonial swiper-slide">
+                    <blockquote>
+                      <p>
+                        <span>&ldquo;</span>
+                        Minha mãe frequenta o salão há anos e me levou um dia para conhecer. Minha experiência foi incrível, eu continuo fazendo o a terapia capilar e isso salvou o meu cabelo. Adoro todos os profissionais do Beautysalon.
+                      </p>
+                      <cite>
+                        <img
+                          src="https://randomuser.me/api/portraits/women/25.jpg"
+                          alt="Foto de Adriana Malta"
+                        />
+                        Adriana Loratto
+                      </cite>
+                    </blockquote>
+                  </div>
+    
+                  <div class="testimonial swiper-slide">
+                    <blockquote>
+                      <p>
+                        <span>&ldquo;</span>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Rerum blanditiis saepe nam excepturi explicabo ipsa error
+                        ipsam neque
+                      </p>
+                      <cite>
+                        <img
+                          src="https://randomuser.me/api/portraits/women/8.jpg"
+                          alt="Fotos de Luana Falcão"
+                        />
+                        Luana Yamada
+                      </cite>
+                    </blockquote>
+                  </div>
+                </div>
+    
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+              </div>
             </div>
-        </section>
-        <div class="divider-1"></div>
+          </section>
+    
+          <div class="divider-2"></div>
 
         <section class="section" id="contact">
             <div class="container grid">
-                Contato
+                <div class="text">
+                    <h2 class="title">Entre em contato com a gente!</h2>
+                    <p>Entre em contato com a Beautysalon, queremos tirar suas dúvidas, ouvir suas críticas e sugestões.</p>
+                    <a href="https://api.whatsapp.com/send?phone=+5511998456755&text=Seje Bem vindo!" class="button" target="_blank"><i class="icon-whatsapp"></i>Entrar em contato</a>
+                </div>
+                <div class="links">
+                    <ul class="grid">
+                        <li><i class="icon-whatsapp"></i>11 99845-6755</li>
+                        <li><i class="icon-map-pin"></i>R. Amauri Souza, 346</li>
+                        <li><i class="icon-mail"></i>contato@beautysalon.com</li>
+                    </ul>
+                </div>
             </div>
         </section>  
     </main>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="main.js"></script>
 </body>
 </html>

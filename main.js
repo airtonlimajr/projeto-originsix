@@ -10,12 +10,14 @@ for (const element of toggle) {
     });
 }
 
+/* quando clicar em um item do menu, esconder o menu */
 for (const link of links) {
     link.addEventListener('click', () => {
         nav.classList.remove('show');
     });
 }
 
+/* mudar o header da página quando der scroll */
 window.addEventListener('scroll', () => {
     if (window.scrollY >= navHeight) {
         header.classList.add('scroll')
@@ -23,3 +25,39 @@ window.addEventListener('scroll', () => {
         header.classList.remove('scroll')
     }
 });
+
+
+/* Testimonials carousel slider swiper */
+const swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    pagination: {
+      el: '.swiper-pagination'
+    },
+    mousewheel: true,
+    keyboard: true,
+    breakpoints: {
+        767: {
+          slidesPerView: 2,
+          setWrapperSize: true
+        }
+      }
+    })
+
+/* ScrollReveal: Mostrar elementos quando der scroll na página */
+const scrollReveal = ScrollReveal({
+    origin: 'top',
+    distance: '30px',
+    duration: 700,
+    reset: true
+  })
+  
+  scrollReveal.reveal(
+    `#home .image, #home .text,
+    #about .image, #about .text,
+    #services header, #services .card,
+    #testimonials header, #testimonials .testimonials
+    #contact .text, #contact .links,
+    footer .brand, footer .social
+    `,
+    { interval: 100 }
+  )
